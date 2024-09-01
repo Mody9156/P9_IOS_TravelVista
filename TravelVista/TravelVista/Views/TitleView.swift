@@ -21,7 +21,7 @@ struct TitleView: View {
             Spacer()
         }
         .padding()
-        .background(.blue)
+        .background(Color("AccentColor"))
         
     }
 }
