@@ -31,6 +31,16 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.view.addSubview(hostingController.view)
         hostingController.didMove(toParent: self)
         
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        hostingController.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        hostingController.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        
+        
+        hostingController.view.heightAnchor.constraint(equalToConstant: 19).isActive = true
+        hostingController.view.widthAnchor.constraint(equalToConstant: 19).isActive = true
+        hostingController.view.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
+        self.titleView.isHidden = true 
+        
         self.setCustomDesign()
 
         if let country = self.country {
