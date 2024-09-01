@@ -10,11 +10,11 @@ import SwiftUI
 struct ListSwiftUIView: View {
     var body: some View {
         List{
-            NavigationLink {
-                <#code#>
-            } label: {
-                CellView()
-            }
+//            NavigationLink() {
+//                <#code#>
+//            } label: {
+//                CellView()
+//            }
 
         }
     }
