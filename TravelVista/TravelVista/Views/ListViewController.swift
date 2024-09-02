@@ -19,7 +19,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.title = "Liste de voyages"
         
         //tableview
-        let hostingController  = UIHostingController(rootView: TitleView())
+        let hostingController  = UIHostingController(rootView: ListView())
         
         self.addChild(hostingController)
         self.view.addSubview(hostingController.view)
