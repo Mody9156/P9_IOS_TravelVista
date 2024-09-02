@@ -19,12 +19,12 @@ struct ListSwiftUIView: View {
         }
     }
 }
-
-struct DetailView : UIViewControllerRepresentable{
-    func makeUIViewController(context: Context) -> some UIViewController {
-        <#code#>
-    }
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        <#code#>
-    }
-}
+//
+//struct DetailView : UIViewControllerRepresentable{
+//    func makeUIViewController(context: Context) -> some UIViewController {
+////        guard let detailVC = UIStoryboard(name: <#T##String#>, bundle: <#T##Bundle?#>)
+//    }
+//    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+//        <#code#>
+//    }
+//}
