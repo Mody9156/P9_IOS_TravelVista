@@ -21,7 +21,8 @@ struct TitleView: View {
                     .foregroundColor(.gray)
             }
             Spacer()
-            Image(systemName:"star.fill").foregroundColor(.yellow)
+            
+            Image(systemName:"star.fill").foregroundColor(Color("AccentColor"))
         }
         .padding()
        
