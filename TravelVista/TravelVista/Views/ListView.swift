@@ -7,13 +7,15 @@
 
 import SwiftUI
 //Simulate a View
-struct ListSwiftUIView: View {
+struct ListView: View {
     var body: some View {
         NavigationStack{
+           
             List{
                NavigationLink {
                    DetailView()
               } label: {
+                  
                   CellView()
                 }
 

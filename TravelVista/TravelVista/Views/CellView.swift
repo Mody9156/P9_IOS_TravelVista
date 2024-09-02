@@ -9,7 +9,29 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            List {
+                Section (header: Text("Europe")){
+                    HStack{
+                        Image("norvege").clipShape(Circle())
+                        VStack{
+                            Text("Norvège")
+                                .font(.title)
+                                .foregroundColor(.blue)
+                            Text("Oslo")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                   
+                    
+                }
+                Spacer()
+                Text("4")
+                Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
+            }
+            
+        }
+        
     }
 }
 

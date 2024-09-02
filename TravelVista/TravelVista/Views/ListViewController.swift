@@ -21,7 +21,20 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         //tableview
         let hostingController  = UIHostingController(rootView: TitleView())
         
+        self.addChild(hostingController)
+        self.view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
         
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            hostingController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            hostingController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
+        
+//        self.tableview.isHidden = true
         self.tableview.dataSource = self
         self.tableview.delegate = self
     }

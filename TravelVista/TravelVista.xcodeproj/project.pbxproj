@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		239DFB8E2C84C0D30030DEA0 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8D2C84C0D30030DEA0 /* ListSwiftUIView.swift */; };
+		239DFB8E2C84C0D30030DEA0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8D2C84C0D30030DEA0 /* ListView.swift */; };
 		239DFB902C84C11D0030DEA0 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8F2C84C11D0030DEA0 /* CellView.swift */; };
 		23FD18FA2C84AC11001EA913 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD18F92C84AC11001EA913 /* TitleView.swift */; };
 		424C31BB2B30919400279238 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BA2B30919400279238 /* CustomCell.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		239DFB8D2C84C0D30030DEA0 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
+		239DFB8D2C84C0D30030DEA0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		239DFB8F2C84C11D0030DEA0 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		23FD18F92C84AC11001EA913 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				424C31BA2B30919400279238 /* CustomCell.swift */,
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 				23FD18F92C84AC11001EA913 /* TitleView.swift */,
-				239DFB8D2C84C0D30030DEA0 /* ListSwiftUIView.swift */,
+				239DFB8D2C84C0D30030DEA0 /* ListView.swift */,
 				239DFB8F2C84C11D0030DEA0 /* CellView.swift */,
 			);
 			path = Views;
@@ -183,7 +183,7 @@
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				42B90C172B2A055B00779364 /* ListViewController.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
-				239DFB8E2C84C0D30030DEA0 /* ListSwiftUIView.swift in Sources */,
+				239DFB8E2C84C0D30030DEA0 /* ListView.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				239DFB902C84C11D0030DEA0 /* CellView.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
