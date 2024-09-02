@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
-
+//Simulate a View
 struct ListSwiftUIView: View {
     var body: some View {
-        List{
-           NavigationLink() {
-               <#code#>
-          } label: {
-              CellView()
-            }
+        NavigationStack{
+            List{
+               NavigationLink {
+                   DetailView()
+              } label: {
+                  CellView()
+                }
 
+            }
         }
     }
 }
@@ -24,14 +26,16 @@ struct DetailView : UIViewControllerRepresentable{
     
     func makeUIViewController(context: Context) -> some UIViewController {
         
-        guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+        guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController")//StoryBoard ID
+                as? DetailViewController else {
             fatalError()
         }
         
-        return detailVC
+        return detailVC // return instance
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        <#code#>
+        //Update the user interface (SwiftUI) when you have an interaction
+        //Our interface is static
     }
 }
