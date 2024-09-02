@@ -11,25 +11,27 @@ struct CellView: View {
     var body: some View {
         VStack{
             List {
-                Section (header: Text("Europe")){
-                    HStack{
-                        Image("norvege").resizable().frame(width: 32.0, height: 32.0).clipShape(Circle())
-                        VStack{
-                            Text("Norvège")
-                                .font(.title)
-                                .foregroundColor(.blue)
-                            Text("Oslo")
-                                .foregroundColor(.gray)
+                    Section {
+                        HStack{
+                            Image("norvege").resizable().frame(width: 50, height: 50).aspectRatio(1, contentMode: .fit).clipShape(Circle())
+                            
+                            VStack(alignment: .leading){
+                                Text("Norvège")
+                                    .font(.title)
+                                    .foregroundColor(.blue)
+                                Text("Oslo")
+                                    .foregroundColor(.black)
+                            }
+                            Spacer()
+                            Text("4")
+                            Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
                         }
+                    }header: {
+                        Text("Europe")
                     }
-                   
-                    
-                }
-                Spacer()
-                Text("4")
-                Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
-            }
-            
+                 
+                
+            }.listStyle(.inset)
         }
         
     }
