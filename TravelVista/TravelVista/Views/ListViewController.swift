@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableview: UITableView!
@@ -16,6 +17,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         self.title = "Liste de voyages"
+        
+        //tableview
+        let hostingController  = UIHostingController(rootView: TitleView())
+        
+        
         self.tableview.dataSource = self
         self.tableview.delegate = self
     }
