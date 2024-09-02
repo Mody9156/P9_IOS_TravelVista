@@ -13,7 +13,7 @@ struct CellView: View {
             List {
                 Section (header: Text("Europe")){
                     HStack{
-                        Image("norvege").clipShape(Circle())
+                        Image("norvege").resizable().frame(width: 32.0, height: 32.0).clipShape(Circle())
                         VStack{
                             Text("Norvège")
                                 .font(.title)
