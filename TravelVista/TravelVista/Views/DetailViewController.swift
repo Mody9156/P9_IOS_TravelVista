@@ -39,7 +39,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         hostingController.view.heightAnchor.constraint(equalToConstant: 19).isActive = true
         hostingController.view.widthAnchor.constraint(equalToConstant: 19).isActive = true
         hostingController.view.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
-        self.titleView.isHidden = true 
+        
+        self.titleView.isHidden = true
+        self.rateView.isHidden = true
         
         self.setCustomDesign()
 

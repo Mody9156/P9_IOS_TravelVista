@@ -8,25 +8,32 @@
 import SwiftUI
 
 struct TitleView: View {
-   
+    var country : Country?
     
     var body: some View {
-        HStack {
+        
+    HStack {
+        if let country = country{
+        
             VStack(alignment: .leading) {
-                Text("Vietnam")
-                    .font(.title)
-                    .foregroundColor(.blue)
+                    
+               
+                Text(country.name)
+                            .font(.title)
+                            .foregroundColor(.blue)
+               
                 
-                Text("Hanoi")
+                Text(country.capital)
                     .foregroundColor(.gray)
             }
             Spacer()
             
             Image(systemName:"star.fill").foregroundColor(Color("AccentColor"))
+                .padding()
         }
-        .padding()
        
-        
     }
+    }
+  
 }
 
