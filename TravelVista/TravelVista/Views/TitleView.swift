@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TitleView: View {
+   
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -19,6 +21,7 @@ struct TitleView: View {
                     .foregroundColor(.gray)
             }
             Spacer()
+            Image(systemName:"star.fill").foregroundColor(.yellow)
         }
         .padding()
        
