@@ -13,15 +13,15 @@ struct TitleView: View {
             VStack(alignment: .leading) {
                 Text("Vietnam")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                 
                 Text("Hanoi")
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
             }
             Spacer()
         }
         .padding()
-        .background(Color("AccentColor"))
+       
         
     }
 }
