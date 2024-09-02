@@ -9,32 +9,37 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
-        VStack{
             List {
-                    Section {
-                        HStack{
-                            Image("norvege").resizable().frame(width: 50, height: 50).aspectRatio(1, contentMode: .fit).clipShape(Circle())
-                            
-                            VStack(alignment: .leading){
-                                Text("Norvège")
-                                    .font(.title)
-                                    .foregroundColor(.blue)
-                                Text("Oslo")
-                                    .foregroundColor(.black)
-                            }
-                            Spacer()
-                            Text("4")
-                            Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
+                Section (header:
+                            Text("Europe")){
+                    HStack{
+                        Image("norvege")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        
+                        VStack(alignment: .leading,spacing: 5){
+                            Text("Norvège")
+                                .font(.title)
+                                .foregroundColor(.blue)
+                            Text("Oslo")
+                                .foregroundColor(.black)
                         }
-                    }header: {
-                        Text("Europe")
+                        Spacer()
+                        Text("4")
+                        Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
                     }
-                 
-                
-            }.listStyle(.inset)
+                    .padding(.vertical, 5)
+                    
+                }
+                 .listSectionSeparatorTint(.black)
+            }
+            .listStyle(.insetGrouped).background(Color(.clear))
+           
         }
         
     }
-}
+    
 
 
