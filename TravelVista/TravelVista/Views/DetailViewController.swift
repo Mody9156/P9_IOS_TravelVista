@@ -42,6 +42,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         self.titleView.isHidden = true
         self.rateView.isHidden = true
+        self.capitalNameLabel.isHidden = true
         
         self.setCustomDesign()
 
