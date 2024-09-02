@@ -25,7 +25,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let hostingController = UIHostingController(rootView: TitleView())
+        let hostingController = UIHostingController(rootView: TitleView(country: country))
         
         self.addChild(hostingController)
         self.view.addSubview(hostingController.view)
