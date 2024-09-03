@@ -26,7 +26,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         
         //TitleView
-        let hostingController = UIHostingController(rootView: TitleView())
+        let hostingController = UIHostingController(rootView: TitleViewSwiftUI())
         
         self.addChild(hostingController)
         self.view.addSubview(hostingController.view)

@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct TitleView: View {
+struct TitleViewSwiftUI: View {
     
     var body: some View {
         
