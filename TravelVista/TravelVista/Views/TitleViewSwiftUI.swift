@@ -22,7 +22,6 @@ struct TitleViewSwiftUI: View {
                     .foregroundColor(Color("CustomBlue"))
                 
                 Text("Hanoi")
-                    .fontWeight(.bold)
                     .foregroundColor(.gray)
             }
             
