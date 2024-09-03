@@ -10,8 +10,9 @@ import SwiftUI
 struct CellView: View {
     var body: some View {
             Section{
-                VStack {
-                   Text("Asie")
+                VStack (alignment: .leading){
+                    Text("Asie").foregroundColor(.gray)
+                    Divider()
                     HStack{
                         Image("vietnam")
                             .resizable()
@@ -27,7 +28,8 @@ struct CellView: View {
                         }
                         Spacer()
                         Text("4")
-                        Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
+                        Image(systemName:  "star.fill").resizable().aspectRatio( contentMode: .fit)
+                            .frame(width: 25, height: 25).foregroundColor(Color("AccentColor"))
                     }
                     .padding(.vertical, 5)
                 }

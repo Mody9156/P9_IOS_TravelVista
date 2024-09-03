@@ -17,11 +17,12 @@ struct ListView: View {
               } label: {
                   
                   CellView()
-                }
-
+                  
+              }
+               
             }.scrollContentBackground(.hidden) // Cache le fond de la liste
                 .background(Color.clear) // Définit le fond de la liste comme transparent
-               
+           
         }
     }
 }
