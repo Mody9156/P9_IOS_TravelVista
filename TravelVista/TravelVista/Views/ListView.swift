@@ -59,7 +59,7 @@ struct NavigationView : View {
     var body : some View{
         // NavigationLink pour chaque pays
         NavigationLink(destination: DetailView(country:country)) {
-            HStack {
+            LazyHStack {
                 Image(country.pictureName)
                     .resizable()
                     .frame(width: 50, height: 50)
