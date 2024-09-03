@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct TitleViewSwiftUI: View {
-    var country : Country?
+    let country : Country?
     
     var body: some View {
         
@@ -35,9 +35,7 @@ struct TitleViewSwiftUI: View {
                             }
                         }
                         .padding()
-                    }
-
-          
+                    }          
         }
     }
 }
