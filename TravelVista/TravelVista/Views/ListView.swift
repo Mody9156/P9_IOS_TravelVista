@@ -19,7 +19,7 @@ struct ListView: View {
                         // Boucle sur chaque pays dans la région
                         ForEach(region.countries, id: \.name) { country in
                             // NavigationLink pour chaque pays
-                            NavigationLink(destination: DetailView(country: countryViewModel.region)) {
+                            NavigationLink(destination: DetailView(country:country , countryViewModel: countryViewModel)) {
                                 HStack {
                                     Image(country.pictureName)
                                         .resizable()
@@ -56,14 +56,18 @@ struct ListView: View {
 }
 struct DetailView : UIViewControllerRepresentable{
     
-    var country : [Region]
+    var country : Country
     
+    @ObservedObject var countryViewModel: CountryViewModel
+
     func makeUIViewController(context: Context) -> some UIViewController {
         //created new instance
         guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController")//StoryBoard ID
                 as? DetailViewController else {
             fatalError()
         }
+                detailVC.country = country
+                
         return detailVC // return instance
     }
     
