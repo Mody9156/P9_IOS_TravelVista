@@ -16,26 +16,27 @@ struct TitleViewSwiftUI: View {
         VStack {
             if let country = country {
                 
-                        HStack {
-                            
-                            VStack(alignment: .leading) {
-                                
-                                Text(country.name)
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color("CustomBlue"))
-                                
-                                Text(country.capital)
-                                    .foregroundColor(.gray)
-                            }
-                            
-                            Spacer()
-                            ForEach(0..<country.rate){ _ in
-                                Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
-                            }
-                        }
-                        .padding()
-                    }          
+                HStack {
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Text(country.name)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("CustomBlue"))
+                        
+                        Text(country.capital)
+                            .foregroundColor(.gray)
+                    }
+                    
+                    Spacer()
+                    
+                    ForEach(0..<country.rate){ _ in
+                        Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
+                    }
+                }
+                .padding()
+            }
         }
     }
 }

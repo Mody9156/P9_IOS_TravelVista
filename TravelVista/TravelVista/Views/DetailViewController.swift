@@ -55,11 +55,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.title = country.name
         
         self.countryNameLabel.text = country.name
-//        self.capitalNameLabel.text = country.capital
         self.imageView.image = UIImage(named: country.pictureName )
         self.descriptionTextView.text = country.description
         
-//        self.setRateStars(rate: country.rate)
         self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
             long: self.country?.coordinates.longitude ?? 84.124008)
     }
