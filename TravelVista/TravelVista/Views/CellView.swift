@@ -20,7 +20,7 @@ struct CellView: View {
                         
                         VStack(alignment: .leading,spacing: 5){
                             Text("Vietnam")
-                                .font(.title)
+                                .font(.title2)
                                 .foregroundColor(Color("CustomBlue"))
                             Text("Hanoi")
                                 .foregroundColor(.black)
