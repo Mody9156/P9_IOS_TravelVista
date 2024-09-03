@@ -9,29 +9,36 @@ import SwiftUI
 
 
 struct TitleViewSwiftUI: View {
- 
+    var country : Country?
     
     var body: some View {
         
-        HStack {
-            
-            VStack(alignment: .leading) {
+        VStack {
+            if let country = country {
                 
-                Text("Vietnam")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("CustomBlue"))
-                
-                Text("Hanoi")
-                    .foregroundColor(.gray)
-            }
-            
-            Spacer()
-            ForEach(0..<4){ _ in
-                Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
-            }
+                        HStack {
+                            
+                            VStack(alignment: .leading) {
+                                
+                                Text(country.name)
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("CustomBlue"))
+                                
+                                Text(country.capital)
+                                    .foregroundColor(.gray)
+                            }
+                            
+                            Spacer()
+                            ForEach(0..<country.rate){ _ in
+                                Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
+                            }
+                        }
+                        .padding()
+                    }
+
+          
         }
-        .padding()
     }
 }
 
