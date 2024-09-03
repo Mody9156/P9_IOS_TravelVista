@@ -22,7 +22,7 @@ struct ListView: View {
                         EmptyView()
                         
                     }.opacity(0)
-                    CellView().contentShape(Rectangle())
+                    CellView(country: countryViewModel.country).contentShape(Rectangle())
                     
                 }
             }.scrollContentBackground(.hidden) // Cache le fond de la liste

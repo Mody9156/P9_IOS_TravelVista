@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CellView: View {
+    var country : [Region]
     var body: some View {
         VStack {
             
