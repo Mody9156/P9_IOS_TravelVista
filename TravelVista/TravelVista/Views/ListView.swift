@@ -4,32 +4,56 @@
 //
 //  Created by KEITA on 01/09/2024.
 //
-
 import SwiftUI
-//Simulate a View
+
+// Simulate a View
 struct ListView: View {
-    @ObservedObject var countryViewModel : CountryViewModel
+    @ObservedObject var countryViewModel: CountryViewModel
     
     var body: some View {
-        NavigationStack{
-            
-            List{
-               
-                    NavigationLink {
-                        DetailView(country: countryViewModel.region)
-                    } label: {
-                        
-                        CellView(regions: countryViewModel.region)
-                        
+        NavigationStack {
+            List {
+                // Boucle sur chaque région dans le ViewModel
+                ForEach(countryViewModel.region, id: \.name) { region in
+                    Section(header: Text(region.name)) {
+                        // Boucle sur chaque pays dans la région
+                        ForEach(region.countries, id: \.name) { country in
+                            // NavigationLink pour chaque pays
+                            NavigationLink(destination: DetailView(country: countryViewModel.region)) {
+                                HStack {
+                                    Image(country.pictureName)
+                                        .resizable()
+                                        .frame(width: 50, height: 50)
+                                        .clipShape(Circle())
+                                    
+                                    VStack(alignment: .leading, spacing: 5) {
+                                        Text(country.name)
+                                            .font(.title2)
+                                            .foregroundColor(Color("CustomBlue"))
+                                        Text(country.capital)
+                                            .foregroundColor(.black)
+                                    }
+                                    Spacer()
+                                    Text("\(country.rate)")
+                                    ForEach(0..<country.rate, id: \.self) { _ in
+                                        Image(systemName: "star.fill")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor(Color("AccentColor"))
+                                    }
+                                }
+                            }
+                        }
                     }
-                   
-            }.scrollContentBackground(.hidden) // Cache le fond de la liste
-                .background(Color.clear) // Définit le fond de la liste comme transparent
-            
+                }
+            }
+            .scrollContentBackground(.hidden) // Cache le fond de la liste
+            .background(Color.clear) // Définit le fond de la liste comme transparent
+            .navigationTitle("List de voyages")
         }
     }
 }
-
 struct DetailView : UIViewControllerRepresentable{
     
     var country : [Region]
