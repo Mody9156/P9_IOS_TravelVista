@@ -9,12 +9,13 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
-                Section (header:
-                            Text("Asie")){
+            Section{
+                VStack {
+                   Text("Asie")
                     HStack{
                         Image("vietnam")
                             .resizable()
-                            .scaledToFit()
+                            
                             .frame(width: 50, height: 50)
                             .clipShape(Circle())
                         
@@ -30,14 +31,13 @@ struct CellView: View {
                         Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
                     }
                     .padding(.vertical, 5)
-                    
                 }
-                 .listSectionSeparatorTint(.black)
-           
-           
+                
+            }
         }
         
-    }
     
+}
+
 
 

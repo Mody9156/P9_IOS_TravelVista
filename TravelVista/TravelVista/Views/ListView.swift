@@ -19,7 +19,9 @@ struct ListView: View {
                   CellView()
                 }
 
-            }.background(Color(.clear))
+            }.scrollContentBackground(.hidden) // Cache le fond de la liste
+                .background(Color.clear) // Définit le fond de la liste comme transparent
+               
         }
     }
 }
