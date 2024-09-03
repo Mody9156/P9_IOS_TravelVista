@@ -35,13 +35,13 @@ struct ListView: View {
                                     }
                                     Spacer()
                                     Text("\(country.rate)")
-                                    ForEach(0..<country.rate, id: \.self) { _ in
+                                  
                                         Image(systemName: "star.fill")
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width: 25, height: 25)
                                             .foregroundColor(Color("AccentColor"))
-                                    }
+                                    
                                 }
                             }
                         }
@@ -59,15 +59,15 @@ struct DetailView : UIViewControllerRepresentable{
     var country : Country
     
     @ObservedObject var countryViewModel: CountryViewModel
-
+    
     func makeUIViewController(context: Context) -> some UIViewController {
         //created new instance
         guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController")//StoryBoard ID
                 as? DetailViewController else {
             fatalError()
         }
-                detailVC.country = country
-                
+        detailVC.country = country
+        
         return detailVC // return instance
     }
     
