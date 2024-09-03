@@ -14,17 +14,15 @@ struct ListView: View {
         NavigationStack{
             
             List{
-                ZStack{
+               
                     NavigationLink {
                         DetailView(country: countryViewModel.region)
                     } label: {
                         
-                        EmptyView()
+                        CellView(regions: countryViewModel.region)
                         
-                    }.opacity(0)
-                    CellView(region: countryViewModel.region).contentShape(Rectangle())
-                    
-                }
+                    }
+                   
             }.scrollContentBackground(.hidden) // Cache le fond de la liste
                 .background(Color.clear) // Définit le fond de la liste comme transparent
             
@@ -42,7 +40,6 @@ struct DetailView : UIViewControllerRepresentable{
                 as? DetailViewController else {
             fatalError()
         }
-        
         return detailVC // return instance
     }
     
