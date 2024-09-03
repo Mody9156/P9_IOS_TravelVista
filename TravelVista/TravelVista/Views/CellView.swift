@@ -9,9 +9,11 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
+        VStack {
+          
             Section{
                 VStack (alignment: .leading){
-                    Text("Asie").foregroundColor(.gray)
+                    Text("Asie").font(.title3).fontWeight(.bold).foregroundColor(.gray)
                     Divider()
                     HStack{
                         Image("vietnam")
@@ -34,8 +36,17 @@ struct CellView: View {
                     .padding()
                 }
                 
-            }
+            } .navigationBarTitleDisplayMode(.inline)
+                .toolbar { // <2>
+                    ToolbarItem(placement: .principal) { // <3>
+                        VStack {
+                            Text("List de voyages").font(.title2).fontWeight(.bold)
+                        }
+                    }
+                }
+           
         }
+    }
     
 }
 
