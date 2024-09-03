@@ -16,7 +16,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Liste de voyages"
+//        self.title = "Liste de voyages"
         
         //tableview
         let hostingController  = UIHostingController(rootView: ListView())
