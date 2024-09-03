@@ -11,7 +11,7 @@ struct CellView: View {
     var body: some View {
             List {
                 Section (header:
-                            Text("Europe")){
+                            Text("Asie")){
                     HStack{
                         Image("vietnam")
                             .resizable()
