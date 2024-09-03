@@ -6,7 +6,6 @@
 //
 import SwiftUI
 
-// Simulate a View
 struct ListView: View {
     let countryViewModel: CountryViewModel
     
@@ -18,7 +17,7 @@ struct ListView: View {
                     Section(header: Text(region.name)) {
                         // Boucle sur chaque pays dans la région
                         ForEach(region.countries, id: \.name) { country in
-                           //NavLink
+                            //NavigationLink
                             NavigationView(country: country)
                         }
                     }
@@ -31,9 +30,7 @@ struct ListView: View {
     }
 }
 struct DetailView : UIViewControllerRepresentable{
-    
     var country : Country
-    
     
     func makeUIViewController(context: Context) -> some UIViewController {
         //created new instance
@@ -57,9 +54,12 @@ struct NavigationView : View {
     var country : Country
     
     var body : some View{
+        
         // NavigationLink pour chaque pays
         NavigationLink(destination: DetailView(country:country)) {
+            
             LazyHStack {
+                
                 Image(country.pictureName)
                     .resizable()
                     .frame(width: 50, height: 50)
@@ -72,15 +72,16 @@ struct NavigationView : View {
                     Text(country.capital)
                         .foregroundColor(.black)
                 }
-                Spacer()
-                Text("\(country.rate)")
-              
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 25, height: 25)
-                        .foregroundColor(Color("AccentColor"))
                 
+                Spacer()
+                
+                Text("\(country.rate)")
+                
+                Image(systemName: "star.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(Color("AccentColor"))
             }
         }
     }
