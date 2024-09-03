@@ -19,7 +19,7 @@ struct ListView: View {
                   CellView()
                 }
 
-            }.listStyle(.insetGrouped).background(Color(.clear))
+            }.background(Color(.clear))
         }
     }
 }
