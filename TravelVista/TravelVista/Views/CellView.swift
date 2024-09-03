@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CellView: View {
     var body: some View {
-            List {
+           
                 Section (header:
-                            Text("Asie")
+                            Text("Asie")){
                     HStack{
                         Image("vietnam")
                             .resizable()
@@ -34,8 +34,7 @@ struct CellView: View {
                     
                 }
                  .listSectionSeparatorTint(.black)
-            }
-            .listStyle(.insetGrouped).background(Color(.clear))
+            
            
         }
         
