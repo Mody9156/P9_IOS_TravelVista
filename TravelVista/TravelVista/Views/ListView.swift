@@ -8,15 +8,15 @@
 import SwiftUI
 //Simulate a View
 struct ListView: View {
-    @ObservedObject var countryName : CountryName
+    @ObservedObject var countryViewModel : CountryViewModel
     
     var body: some View {
         NavigationStack{
             
-            List{
+            List(countryViewModel.country,id:\.name){ name in
                 ZStack{
                     NavigationLink {
-                        DetailView(country: countryName.country)
+                        DetailView(country: countryViewModel.country)
                     } label: {
                         
                         EmptyView()
@@ -34,7 +34,7 @@ struct ListView: View {
 
 struct DetailView : UIViewControllerRepresentable{
     
-    var country : [Country]
+    var country : [Region]
     
     func makeUIViewController(context: Context) -> some UIViewController {
         //created new instance

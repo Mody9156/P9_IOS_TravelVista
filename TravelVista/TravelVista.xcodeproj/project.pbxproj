@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2302F2D72C8732A7004F2AD6 /* CountryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302F2D62C8732A7004F2AD6 /* CountryTable.swift */; };
+		2302F2D72C8732A7004F2AD6 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302F2D62C8732A7004F2AD6 /* CountryViewModel.swift */; };
 		239DFB8E2C84C0D30030DEA0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8D2C84C0D30030DEA0 /* ListView.swift */; };
 		239DFB902C84C11D0030DEA0 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8F2C84C11D0030DEA0 /* CellView.swift */; };
 		23FD18FA2C84AC11001EA913 /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD18F92C84AC11001EA913 /* TitleViewSwiftUI.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2302F2D62C8732A7004F2AD6 /* CountryTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTable.swift; sourceTree = "<group>"; };
+		2302F2D62C8732A7004F2AD6 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		239DFB8D2C84C0D30030DEA0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		239DFB8F2C84C11D0030DEA0 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		23FD18F92C84AC11001EA913 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		2302F2D52C873259004F2AD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2302F2D62C8732A7004F2AD6 /* CountryTable.swift */,
+				2302F2D62C8732A7004F2AD6 /* CountryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				239DFB8E2C84C0D30030DEA0 /* ListView.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
-				2302F2D72C8732A7004F2AD6 /* CountryTable.swift in Sources */,
+				2302F2D72C8732A7004F2AD6 /* CountryViewModel.swift in Sources */,
 				239DFB902C84C11D0030DEA0 /* CellView.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
