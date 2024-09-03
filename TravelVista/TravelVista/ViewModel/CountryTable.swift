@@ -8,6 +8,6 @@
 import Foundation
 
 class CountryName : ObservableObject {
-    var country : [Country] = Service().load("Source.json")
+    var country : [Region] = Service().load("Source.json")
    
 }
