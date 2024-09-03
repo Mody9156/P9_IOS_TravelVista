@@ -35,8 +35,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         ])
         
 //        self.tableview.isHidden = true
-        self.tableview.dataSource = self
-        self.tableview.delegate = self
+//        self.tableview.dataSource = self
+//        self.tableview.delegate = self
     }
     
     // Gestion des sections - 2 fonctions
