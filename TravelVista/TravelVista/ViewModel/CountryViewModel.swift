@@ -8,6 +8,6 @@
 import Foundation
 
 class CountryViewModel : ObservableObject {
-   @Published var country : [Region] = Service().load("Source.json")
-   
+   @Published var region : [Region] = Service().load("Source.json")
+    @Published var country : [Country] = Service().load("Source.json")
 }
