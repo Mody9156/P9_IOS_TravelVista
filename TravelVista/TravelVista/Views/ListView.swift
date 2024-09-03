@@ -8,7 +8,7 @@
 import SwiftUI
 //Simulate a View
 struct ListView: View {
-    @ObservableObject let countryName : CountryName
+    @ObservedObject var countryName : CountryName
     
     var body: some View {
         NavigationStack{
