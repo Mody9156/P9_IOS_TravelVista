@@ -8,32 +8,36 @@
 import SwiftUI
 //Simulate a View
 struct ListView: View {
+    @ObservableObject let countryName : CountryName
+    
     var body: some View {
         NavigationStack{
-           
+            
             List{
                 ZStack{
                     NavigationLink {
-                        DetailView()
-                   } label: {
-                       
-                       EmptyView()
-                       
-                   }.opacity(0)
-                     CellView().contentShape(Rectangle())
-
+                        DetailView(country: countryName.country)
+                    } label: {
+                        
+                        EmptyView()
+                        
+                    }.opacity(0)
+                    CellView().contentShape(Rectangle())
+                    
                 }
             }.scrollContentBackground(.hidden) // Cache le fond de la liste
                 .background(Color.clear) // Définit le fond de la liste comme transparent
-           
+            
         }
     }
 }
 
 struct DetailView : UIViewControllerRepresentable{
     
+    var country : [Country]
+    
     func makeUIViewController(context: Context) -> some UIViewController {
-        
+        //created new instance
         guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController")//StoryBoard ID
                 as? DetailViewController else {
             fatalError()
