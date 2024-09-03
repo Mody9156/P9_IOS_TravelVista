@@ -8,7 +8,7 @@ import SwiftUI
 
 // Simulate a View
 struct ListView: View {
-    @ObservedObject var countryViewModel: CountryViewModel
+    let countryViewModel: CountryViewModel
     
     var body: some View {
         NavigationStack {
@@ -19,7 +19,7 @@ struct ListView: View {
                         // Boucle sur chaque pays dans la région
                         ForEach(region.countries, id: \.name) { country in
                             // NavigationLink pour chaque pays
-                            NavigationLink(destination: DetailView(country:country , countryViewModel: countryViewModel)) {
+                            NavigationLink(destination: DetailView(country:country) {
                                 HStack {
                                     Image(country.pictureName)
                                         .resizable()
@@ -58,7 +58,6 @@ struct DetailView : UIViewControllerRepresentable{
     
     var country : Country
     
-    @ObservedObject var countryViewModel: CountryViewModel
     
     func makeUIViewController(context: Context) -> some UIViewController {
         //created new instance
