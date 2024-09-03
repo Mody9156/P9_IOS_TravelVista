@@ -31,12 +31,11 @@ struct CellView: View {
                         Image(systemName:  "star.fill").resizable().aspectRatio( contentMode: .fit)
                             .frame(width: 25, height: 25).foregroundColor(Color("AccentColor"))
                     }
-                    .padding(.vertical, 5)
+                    .padding()
                 }
                 
             }
         }
-        
     
 }
 

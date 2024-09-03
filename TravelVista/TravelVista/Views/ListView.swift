@@ -12,14 +12,17 @@ struct ListView: View {
         NavigationStack{
            
             List{
-               NavigationLink {
-                   DetailView()
-              } label: {
-                  
-                  CellView()
-                  
-              }
-               
+                ZStack{
+                    NavigationLink {
+                        DetailView()
+                   } label: {
+                       
+                       EmptyView()
+                       
+                   }.opacity(0)
+                     CellView().contentShape(Rectangle())
+
+                }
             }.scrollContentBackground(.hidden) // Cache le fond de la liste
                 .background(Color.clear) // Définit le fond de la liste comme transparent
            
