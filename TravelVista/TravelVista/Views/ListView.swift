@@ -13,7 +13,7 @@ struct ListView: View {
     var body: some View {
         NavigationStack{
             
-            List(countryViewModel.country,id:\.name){ name in
+            List{
                 ZStack{
                     NavigationLink {
                         DetailView(country: countryViewModel.region)
@@ -22,7 +22,7 @@ struct ListView: View {
                         EmptyView()
                         
                     }.opacity(0)
-                    CellView(region: countryViewModel.region, country: countryViewModel.country).contentShape(Rectangle())
+                    CellView(region: countryViewModel.region).contentShape(Rectangle())
                     
                 }
             }.scrollContentBackground(.hidden) // Cache le fond de la liste
