@@ -10,7 +10,7 @@ import SwiftUI
 struct CellView: View {
     var body: some View {
             List {
-              
+                Section (header:
                             Text("Asie")
                     HStack{
                         Image("vietnam")
@@ -32,7 +32,8 @@ struct CellView: View {
                     }
                     .padding(.vertical, 5)
                     
-           
+                }
+                 .listSectionSeparatorTint(.black)
             }
             .listStyle(.insetGrouped).background(Color(.clear))
            
