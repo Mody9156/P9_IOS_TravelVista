@@ -15,14 +15,13 @@ struct CellView: View {
                     HStack{
                         Image("vietnam")
                             .resizable()
-                            
                             .frame(width: 50, height: 50)
                             .clipShape(Circle())
                         
                         VStack(alignment: .leading,spacing: 5){
                             Text("Vietnam")
                                 .font(.title)
-                                .foregroundColor(.blue)
+                                .foregroundColor(Color("CustomBlue"))
                             Text("Hanoi")
                                 .foregroundColor(.black)
                         }
