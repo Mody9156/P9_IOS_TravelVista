@@ -10,7 +10,7 @@ import SwiftUI
 struct CellView: View {
     var body: some View {
         VStack {
-          
+            
             Section{
                 VStack (alignment: .leading){
                     Text("Asie").font(.title3).fontWeight(.bold).foregroundColor(.gray)
@@ -33,7 +33,7 @@ struct CellView: View {
                         Image(systemName:  "star.fill").resizable().aspectRatio( contentMode: .fit)
                             .frame(width: 25, height: 25).foregroundColor(Color("AccentColor"))
                     }
-                    .padding()
+                    
                 }
                 
             } .navigationBarTitleDisplayMode(.inline)
@@ -44,7 +44,7 @@ struct CellView: View {
                         }
                     }
                 }
-           
+            
         }
     }
     
