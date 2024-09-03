@@ -13,17 +13,17 @@ struct CellView: View {
                 Section (header:
                             Text("Europe")){
                     HStack{
-                        Image("norvege")
+                        Image("vietnam")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 50, height: 50)
                             .clipShape(Circle())
                         
                         VStack(alignment: .leading,spacing: 5){
-                            Text("Norvège")
+                            Text("Vietnam")
                                 .font(.title)
                                 .foregroundColor(.blue)
-                            Text("Oslo")
+                            Text("Hanoi")
                                 .foregroundColor(.black)
                         }
                         Spacer()
