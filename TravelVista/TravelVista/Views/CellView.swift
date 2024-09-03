@@ -32,7 +32,7 @@ struct CellView: View {
                     .padding(.vertical, 5)
                     
                 }
-                 .listSectionSeparatorTint(.black)
+                 .listSectionSeparatorTint(.black).listStyle(.insetGrouped).background(Color(.clear))
           
             
            
