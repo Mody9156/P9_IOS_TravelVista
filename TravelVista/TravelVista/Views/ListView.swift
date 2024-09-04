@@ -29,6 +29,7 @@ struct ListView: View {
         }
     }
 }
+
 struct DetailView : UIViewControllerRepresentable{
     var country : Country
     

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct TitleViewSwiftUI: View {
     let country : Country?
     
