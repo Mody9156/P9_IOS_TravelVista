@@ -26,6 +26,7 @@ struct ListView: View {
             .scrollContentBackground(.hidden) // Cache le fond de la liste
             .background(Color.clear) // Définit le fond de la liste comme transparent
             .navigationTitle("List de voyages")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
