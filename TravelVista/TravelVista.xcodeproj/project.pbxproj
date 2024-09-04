@@ -22,8 +22,19 @@
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2304453D2C887AB800238018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B90C072B2A055A00779364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B90C0E2B2A055B00779364;
+			remoteInfo = TravelVista;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2302F2D62C8732A7004F2AD6 /* TravelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewModel.swift; sourceTree = "<group>"; };
+		230445392C887AB700238018 /* TravelVistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239DFB8D2C84C0D30030DEA0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		23FD18F92C84AC11001EA913 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -41,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		230445362C887AB700238018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B90C0C2B2A055B00779364 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				42B90C0F2B2A055B00779364 /* TravelVista.app */,
+				230445392C887AB700238018 /* TravelVistaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +134,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		230445382C887AB700238018 /* TravelVistaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2304453F2C887AB800238018 /* Build configuration list for PBXNativeTarget "TravelVistaTests" */;
+			buildPhases = (
+				230445352C887AB700238018 /* Sources */,
+				230445362C887AB700238018 /* Frameworks */,
+				230445372C887AB700238018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2304453E2C887AB800238018 /* PBXTargetDependency */,
+			);
+			name = TravelVistaTests;
+			productName = TravelVistaTests;
+			productReference = 230445392C887AB700238018 /* TravelVistaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		42B90C0E2B2A055B00779364 /* TravelVista */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42B90C232B2A056000779364 /* Build configuration list for PBXNativeTarget "TravelVista" */;
@@ -139,9 +176,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					230445382C887AB700238018 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 42B90C0E2B2A055B00779364;
+					};
 					42B90C0E2B2A055B00779364 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -161,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				42B90C0E2B2A055B00779364 /* TravelVista */,
+				230445382C887AB700238018 /* TravelVistaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		230445372C887AB700238018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B90C0D2B2A055B00779364 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +229,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		230445352C887AB700238018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42B90C0B2B2A055B00779364 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +253,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2304453E2C887AB800238018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B90C0E2B2A055B00779364 /* TravelVista */;
+			targetProxy = 2304453D2C887AB800238018 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42B90C182B2A055B00779364 /* Main.storyboard */ = {
@@ -218,6 +282,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		230445402C887AB800238018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UMC25BBL;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimants-d-Animaux.TravelVistaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelVista.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelVista";
+			};
+			name = Debug;
+		};
+		230445412C887AB800238018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UMC25BBL;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aimants-d-Animaux.TravelVistaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelVista.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelVista";
+			};
+			name = Release;
+		};
 		42B90C212B2A056000779364 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2304453F2C887AB800238018 /* Build configuration list for PBXNativeTarget "TravelVistaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230445402C887AB800238018 /* Debug */,
+				230445412C887AB800238018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		42B90C0A2B2A055A00779364 /* Build configuration list for PBXProject "TravelVista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYc-kV-N1y">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
@@ -14,27 +14,27 @@
         <scene sceneID="HZV-6C-8oR">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Db-d4-uNW" customClass="DetailViewController" customModule="TravelVista" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="P5q-il-YDl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="view" contentMode="scaleToFill" id="P5q-il-YDl">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vietnam" translatesAutoresizingMaskIntoConstraints="NO" id="nFw-jC-nxh">
-                                <rect key="frame" x="0.0" y="59" width="393" height="180"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="197"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nFw-jC-nxh" secondAttribute="height" multiplier="131:60" id="L6O-ok-A2N"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-BL-ytX">
-                                <rect key="frame" x="0.0" y="283" width="393" height="569"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-BL-ytX">
+                                <rect key="frame" x="0.0" y="256" width="430" height="676"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-wv-jeH" userLabel="TitleView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="65"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-Vf-aPx" userLabel="NamesView">
-                                                <rect key="frame" x="0.0" y="0.0" width="258" height="65"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-kk-9HB">
-                                                        <rect key="frame" x="20" y="8" width="230" height="28"/>
+                                                        <rect key="frame" x="20" y="8" width="267" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="IA1-ae-xmh"/>
                                                         </constraints>
@@ -43,7 +43,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanoi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJp-i9-mYY">
-                                                        <rect key="frame" x="20" y="36" width="230" height="21"/>
+                                                        <rect key="frame" x="20" y="36" width="267" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="TMv-8b-1we"/>
                                                         </constraints>
@@ -63,7 +63,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIx-Y6-EEM" userLabel="RateView">
-                                                <rect key="frame" x="266" y="15" width="111" height="35"/>
+                                                <rect key="frame" x="303" y="15" width="111" height="35"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="111" id="Clb-Tr-koj"/>
@@ -82,7 +82,7 @@
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-GU-Tzc">
-                                        <rect key="frame" x="8" y="65" width="377" height="215"/>
+                                        <rect key="frame" x="8" y="65" width="414" height="67.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="215" id="NCg-uX-jM5"/>
@@ -93,7 +93,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRM-fQ-OSa">
-                                        <rect key="frame" x="85.666666666666686" y="315" width="222" height="222"/>
+                                        <rect key="frame" x="104" y="167.5" width="222" height="222"/>
                                         <subviews>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TR-oZ-w9T">
                                                 <rect key="frame" x="0.0" y="0.0" width="222" height="222"/>
@@ -170,11 +170,11 @@
             <objects>
                 <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pem-sL-j9Z" customClass="MapViewController" customModule="TravelVista" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sVA-2K-LAR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMI-ov-owt">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                         </subviews>
@@ -202,7 +202,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gYc-kV-N1y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAS-G4-wzy">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
