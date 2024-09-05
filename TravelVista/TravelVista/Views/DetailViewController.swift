@@ -52,7 +52,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     }
     
     private func setUpData(country: Country) {
-        
+        self.title = country.name
         self.imageView.image = UIImage(named: country.pictureName )
         self.descriptionTextView.text = country.description
         
