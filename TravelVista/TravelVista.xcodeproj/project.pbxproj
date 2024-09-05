@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2302F2D72C8732A7004F2AD6 /* TravelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302F2D62C8732A7004F2AD6 /* TravelViewModel.swift */; };
 		239DFB8E2C84C0D30030DEA0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DFB8D2C84C0D30030DEA0 /* ListView.swift */; };
+		23F675F02C89E27500D4EEEA /* TravelVistaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F675EF2C89E27500D4EEEA /* TravelVistaTests.swift */; };
 		23FD18FA2C84AC11001EA913 /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD18F92C84AC11001EA913 /* TitleViewSwiftUI.swift */; };
 		424C31BB2B30919400279238 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BA2B30919400279238 /* CustomCell.swift */; };
 		424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BC2B30955E00279238 /* DetailViewController.swift */; };
@@ -23,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2304453D2C887AB800238018 /* PBXContainerItemProxy */ = {
+		23F675F12C89E27500D4EEEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42B90C072B2A055A00779364 /* Project object */;
 			proxyType = 1;
@@ -34,8 +35,9 @@
 
 /* Begin PBXFileReference section */
 		2302F2D62C8732A7004F2AD6 /* TravelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewModel.swift; sourceTree = "<group>"; };
-		230445392C887AB700238018 /* TravelVistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239DFB8D2C84C0D30030DEA0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		23F675ED2C89E27500D4EEEA /* TravelVistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelVistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F675EF2C89E27500D4EEEA /* TravelVistaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelVistaTests.swift; sourceTree = "<group>"; };
 		23FD18F92C84AC11001EA913 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		424C31BC2B30955E00279238 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		230445362C887AB700238018 /* Frameworks */ = {
+		23F675EA2C89E27500D4EEEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +75,22 @@
 			isa = PBXGroup;
 			children = (
 				2302F2D62C8732A7004F2AD6 /* TravelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		23F675EE2C89E27500D4EEEA /* TravelVistaTests */ = {
+			isa = PBXGroup;
+			children = (
+				23F675F62C89E27E00D4EEEA /* ViewModel */,
+				23F675EF2C89E27500D4EEEA /* TravelVistaTests.swift */,
+			);
+			path = TravelVistaTests;
+			sourceTree = "<group>";
+		};
+		23F675F62C89E27E00D4EEEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -103,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				42B90C112B2A055B00779364 /* TravelVista */,
+				23F675EE2C89E27500D4EEEA /* TravelVistaTests */,
 				42B90C102B2A055B00779364 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				42B90C0F2B2A055B00779364 /* TravelVista.app */,
-				230445392C887AB700238018 /* TravelVistaTests.xctest */,
+				23F675ED2C89E27500D4EEEA /* TravelVistaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,22 +153,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		230445382C887AB700238018 /* TravelVistaTests */ = {
+		23F675EC2C89E27500D4EEEA /* TravelVistaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2304453F2C887AB800238018 /* Build configuration list for PBXNativeTarget "TravelVistaTests" */;
+			buildConfigurationList = 23F675F32C89E27500D4EEEA /* Build configuration list for PBXNativeTarget "TravelVistaTests" */;
 			buildPhases = (
-				230445352C887AB700238018 /* Sources */,
-				230445362C887AB700238018 /* Frameworks */,
-				230445372C887AB700238018 /* Resources */,
+				23F675E92C89E27500D4EEEA /* Sources */,
+				23F675EA2C89E27500D4EEEA /* Frameworks */,
+				23F675EB2C89E27500D4EEEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2304453E2C887AB800238018 /* PBXTargetDependency */,
+				23F675F22C89E27500D4EEEA /* PBXTargetDependency */,
 			);
 			name = TravelVistaTests;
 			productName = TravelVistaTests;
-			productReference = 230445392C887AB700238018 /* TravelVistaTests.xctest */;
+			productReference = 23F675ED2C89E27500D4EEEA /* TravelVistaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		42B90C0E2B2A055B00779364 /* TravelVista */ = {
@@ -179,7 +198,7 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					230445382C887AB700238018 = {
+					23F675EC2C89E27500D4EEEA = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 42B90C0E2B2A055B00779364;
 					};
@@ -202,13 +221,13 @@
 			projectRoot = "";
 			targets = (
 				42B90C0E2B2A055B00779364 /* TravelVista */,
-				230445382C887AB700238018 /* TravelVistaTests */,
+				23F675EC2C89E27500D4EEEA /* TravelVistaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		230445372C887AB700238018 /* Resources */ = {
+		23F675EB2C89E27500D4EEEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,10 +248,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		230445352C887AB700238018 /* Sources */ = {
+		23F675E92C89E27500D4EEEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F675F02C89E27500D4EEEA /* TravelVistaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +275,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2304453E2C887AB800238018 /* PBXTargetDependency */ = {
+		23F675F22C89E27500D4EEEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 42B90C0E2B2A055B00779364 /* TravelVista */;
-			targetProxy = 2304453D2C887AB800238018 /* PBXContainerItemProxy */;
+			targetProxy = 23F675F12C89E27500D4EEEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -282,7 +302,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		230445402C887AB800238018 /* Debug */ = {
+		23F675F42C89E27500D4EEEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -303,7 +323,7 @@
 			};
 			name = Debug;
 		};
-		230445412C887AB800238018 /* Release */ = {
+		23F675F52C89E27500D4EEEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,11 +528,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2304453F2C887AB800238018 /* Build configuration list for PBXNativeTarget "TravelVistaTests" */ = {
+		23F675F32C89E27500D4EEEA /* Build configuration list for PBXNativeTarget "TravelVistaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				230445402C887AB800238018 /* Debug */,
-				230445412C887AB800238018 /* Release */,
+				23F675F42C89E27500D4EEEA /* Debug */,
+				23F675F52C89E27500D4EEEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
