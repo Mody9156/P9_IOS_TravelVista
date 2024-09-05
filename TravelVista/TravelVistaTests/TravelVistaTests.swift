@@ -23,5 +23,13 @@ final class TravelVistaTests: XCTestCase {
         XCTAssertEqual(result.isEmpty, false)
     }
 
-
+    func testWhenRegionsNotEmpty() throws {
+        //Given
+        
+        
+        //When
+        
+        
+        //Then
+    }
 }
