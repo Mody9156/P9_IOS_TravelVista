@@ -40,8 +40,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         hostingController.view.widthAnchor.constraint(equalToConstant: 19).isActive = true
         hostingController.view.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
         
-    
-//        self.titleView.isHidden = true
+        
+        self.titleView.isHidden = true
         self.rateView.isHidden = true
         self.capitalNameLabel.isHidden = true
         
@@ -53,7 +53,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     }
     
     private func setUpData(country: Country) {
-        self.title = country.name
         
         self.imageView.image = UIImage(named: country.pictureName )
         self.descriptionTextView.text = country.description
@@ -61,6 +60,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
             long: self.country?.coordinates.longitude ?? 84.124008)
     }
+    
     
     private func setCustomDesign() {
         self.mapView.layer.cornerRadius = self.mapView.frame.size.width / 2
