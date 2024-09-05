@@ -10,7 +10,7 @@ import XCTest
 
 final class TravelVistaTests: XCTestCase {
 
-    
+   
 
     func testWhenRegionsIsNotEmpty() throws {
        //Given
@@ -25,11 +25,12 @@ final class TravelVistaTests: XCTestCase {
 
     func testWhenRegionsNotEmpty() throws {
         //Given
-        
-        
+        let travelViewModel = TravelViewModel()
+
         //When
-        
-        
+        var result = travelViewModel.regions
+        result.removeAll()
         //Then
+        XCTAssertEqual(result.isEmpty, true)
     }
 }
