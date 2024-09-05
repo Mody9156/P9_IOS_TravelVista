@@ -32,6 +32,5 @@ final class TravelVistaTests: XCTestCase {
         result.removeAll()
         //Then
         XCTAssertEqual(result.isEmpty, true)
-        XCTAssertEqual(result.first?.name == "" , true)
     }
 }
