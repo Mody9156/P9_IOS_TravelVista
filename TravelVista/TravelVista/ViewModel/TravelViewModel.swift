@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
+//Test
 class TravelViewModel : ObservableObject {
-   @Published var region : [Region] = Service().load("Source.json")
+   @Published var regions : [Region] = Service().load("Source.json")
 
 }

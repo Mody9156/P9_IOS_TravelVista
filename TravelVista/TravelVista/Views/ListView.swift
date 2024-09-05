@@ -13,7 +13,7 @@ struct ListView: View {
         NavigationStack {
             List {
                 // Boucle sur chaque région dans le ViewModel
-                ForEach(travelViewModel.region, id: \.name) { region in
+                ForEach(travelViewModel.regions, id: \.name) { region in
                     Section(header: Text(region.name)) {
                         // Boucle sur chaque pays dans la région
                         ForEach(region.countries, id: \.name) { country in
