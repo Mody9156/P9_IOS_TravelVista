@@ -12,8 +12,12 @@ final class TravelVistaTests: XCTestCase {
 
     
 
-    func testWhenRegionsIsEMmpty() throws {
-       
+    func testWhenRegionsIsEmpty() throws {
+       //Given
+        
+        //When
+        
+        //Then
     }
 
 
