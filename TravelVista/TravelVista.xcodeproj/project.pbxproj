@@ -83,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				23F6760B2C8A0DED00D4EEEA /* ViewModel */,
-				23F676042C8A0DE300D4EEEA /* TravelVistaTests.swift */,
 			);
 			path = TravelVistaTests;
 			sourceTree = "<group>";
@@ -91,6 +90,7 @@
 		23F6760B2C8A0DED00D4EEEA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				23F676042C8A0DE300D4EEEA /* TravelVistaTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
