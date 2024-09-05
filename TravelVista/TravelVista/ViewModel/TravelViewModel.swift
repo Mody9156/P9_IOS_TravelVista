@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class TravelViewModel : ObservableObject {
+   @Published var regions : [Region] = Service().load("Source.json")
+
+}
