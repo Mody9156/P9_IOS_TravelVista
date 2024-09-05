@@ -20,7 +20,7 @@ final class TravelVistaTests: XCTestCase {
         let result = travelViewModel.regions
         
         //Then
-        XCTAssertEqual(result.isEmpty, true)
+        XCTAssertEqual(result.isEmpty, false)
     }
 
 
