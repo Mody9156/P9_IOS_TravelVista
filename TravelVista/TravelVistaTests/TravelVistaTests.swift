@@ -12,12 +12,15 @@ final class TravelVistaTests: XCTestCase {
 
     
 
-    func testWhenRegionsIsEmpty() throws {
+    func testWhenRegionsIsNotEmpty() throws {
        //Given
+        let travelViewModel = TravelViewModel()
         
         //When
+        let result = travelViewModel.regions
         
         //Then
+        XCTAssertEqual(result.isEmpty, true)
     }
 
 
