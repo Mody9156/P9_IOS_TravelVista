@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import SwiftUI
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var countryNameLabel: UILabel!
@@ -24,6 +25,25 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //TitleView
+        let hostingController = UIHostingController(rootView: TitleViewSwiftUI(country: country))
+        
+        self.addChild(hostingController)
+        self.view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
+        
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        hostingController.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        hostingController.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        
+        hostingController.view.heightAnchor.constraint(equalToConstant: 19).isActive = true
+        hostingController.view.widthAnchor.constraint(equalToConstant: 19).isActive = true
+        hostingController.view.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
+        
+        self.titleView.isHidden = true
+        self.rateView.isHidden = true
+        self.capitalNameLabel.isHidden = true
+        
         self.setCustomDesign()
 
         if let country = self.country {
@@ -32,16 +52,12 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     }
     
     private func setUpData(country: Country) {
-        self.title = country.name
         
-        self.countryNameLabel.text = country.name
-        self.capitalNameLabel.text = country.capital
         self.imageView.image = UIImage(named: country.pictureName )
         self.descriptionTextView.text = country.description
         
-        self.setRateStars(rate: country.rate)
         self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
-                            long: self.country?.coordinates.longitude ?? 84.124008)
+            long: self.country?.coordinates.longitude ?? 84.124008)
     }
     
     private func setCustomDesign() {
@@ -61,20 +77,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.mapView.delegate = self
     }
     
-    private func setRateStars(rate: Int) {
-        var lastRightAnchor = self.rateView.rightAnchor
-        for _ in 0..<rate {
-            let starView = UIImageView(image: UIImage(systemName: "star.fill"))
-            self.rateView.addSubview(starView)
-            
-            starView.translatesAutoresizingMaskIntoConstraints = false
-            starView.widthAnchor.constraint(equalToConstant: 19).isActive = true
-            starView.heightAnchor.constraint(equalToConstant: 19).isActive = true
-            starView.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
-            starView.rightAnchor.constraint(equalTo: lastRightAnchor).isActive = true
-            lastRightAnchor = starView.leftAnchor
-        }
-    }
+    
     
     // Cette fonction est appelée lorsque la carte est cliquée
     // Elle permet d'afficher un nouvel écran qui contient une carte

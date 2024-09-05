@@ -97,9 +97,9 @@
 		42B90C112B2A055B00779364 /* TravelVista */ = {
 			isa = PBXGroup;
 			children = (
-				23F675F72C8A0CB100D4EEEA /* ViewModel */,
 				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
+				23F675F72C8A0CB100D4EEEA /* ViewModel */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C182B2A055B00779364 /* Main.storyboard */,
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
