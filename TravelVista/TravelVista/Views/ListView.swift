@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct ListView: View {
-    let travelViewModel: TravelViewModel
+   @ObservedObject var travelViewModel: TravelViewModel
     
     var body: some View {
         NavigationStack {
