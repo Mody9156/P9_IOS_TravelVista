@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TitleViewSwiftUI: View {
-    let country : Country?
+   @State var country : Country?
     
     var body: some View {
         
@@ -30,7 +30,7 @@ struct TitleViewSwiftUI: View {
                     
                     Spacer()
                     
-                    ForEach(0..<country.rate){ _ in
+                    ForEach(0..<Int(country.rate)){ _ in
                         Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
                     }
                 }
