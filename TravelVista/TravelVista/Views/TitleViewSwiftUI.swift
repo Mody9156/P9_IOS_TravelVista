@@ -11,7 +11,7 @@ struct TitleViewSwiftUI: View {
    @State var country : Country?
     
     var body: some View {
-        
+       
         VStack {
             if let country = country {
                 
@@ -30,9 +30,12 @@ struct TitleViewSwiftUI: View {
                     
                     Spacer()
                     
-                    ForEach(0..<Int(country.rate)){ _ in
+                    if let starCount = country.rate {
+                   
+                    ForEach(0..<starCount,id:\.self){ _ in
                         Image(systemName:  "star.fill").foregroundColor(Color("AccentColor"))
                     }
+                }
                 }
                 .padding()
             }
