@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import TravelVista
 
 final class TravelVistaTests: XCTestCase {
 

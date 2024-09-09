@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TitleViewSwiftUI: View {
-   @State var country : Country?
+   var country : Country?
     
     var body: some View {
        
