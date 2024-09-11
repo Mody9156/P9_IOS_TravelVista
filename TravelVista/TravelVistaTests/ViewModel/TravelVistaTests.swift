@@ -9,9 +9,9 @@ import XCTest
 @testable import TravelVista
 
 final class TravelVistaTests: XCTestCase {
-
+    
     func testWhenRegionsIsNotEmpty() throws {
-       //Given
+        //Given
         let travelViewModel = TravelViewModel()
         
         //When
@@ -20,17 +20,31 @@ final class TravelVistaTests: XCTestCase {
         //Then
         XCTAssertEqual(result.isEmpty, false)
         XCTAssertEqual(result.first?.name == "Europe", true)
- 
+        
+        
     }
-
-    func testWhenRegionsNotEmpty() throws {
+    
+  
+    func testWhenRegionsIsEmpty() throws {
         //Given
-        let travelViewModel = TravelViewModel()
-
+        let mockService = MockService()
+        let travelViewModel = TravelViewModel(service: mockService)
+        
         //When
-        var result = travelViewModel.regions
-        result.removeAll()
+        travelViewModel.regions.removeAll()
+        
         //Then
-        XCTAssertEqual(result.isEmpty, true)
+        XCTAssertEqual(travelViewModel.regions.isEmpty, true)
     }
 }
+
+// Mock Service class to simulate loading data without reading a real JSON file
+
+class MockService: Service {
+    func load(_ filename: String) -> [Region] {
+        // Return mock data instead of reading from a file
+        let country = [Country(name: "France", capital: "Paris", description: "", rate: 3, pictureName: "", coordinates: Coordinates(latitude: 22.22, longitude: 22.44))]
+        return [Region(name: "Afrique", countries: country)]  // Mocked data
+    }
+}
+
