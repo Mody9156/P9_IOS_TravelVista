@@ -33,8 +33,14 @@ Open the project in Xcode using the .xcworkspace file.
 Explore the existing UIKit code to understand its structure.
 Start migrating the interface to SwiftUI while retaining the core functionalities.
 Test the app in the iOS simulator or on a physical device to ensure everything works.
-Screenshots
-<p align="center"><img alt="UIKit Interface" src="Images/uikit_interface.png" width="200"></p>    <p align="center"><img alt="SwiftUI Interface" src="Images/swiftui_interface.png" width="200"></p>
+
+<h2>Screenshots</h2>
+
+| <p align="center"><img alt="UIKit Interface" src="Images/uikit_interface.png" width="200"></p>    <p align="center"><img alt="SwiftUI Interface" src="Images/swiftui_interface.png" width="200"></p> | 
+
+|:--:|:--:|:--:|:--:|
+| **Sources** | **Store** | **Library** | **Signing** |
+
 UIKit Interface    SwiftUI Interface
 
 <h2>How it Works</h2>
