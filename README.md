@@ -36,13 +36,11 @@ Test the app in the iOS simulator or on a physical device to ensure everything w
 
 ## Screenshots
 
+| <p align="center"><img src="List.png" width="100" alt="SwiftUI Interface"></p> | <p align="center"><img src="Detailed.png" width="100" alt="SwiftUI/UIKIT Interface"></p> | <p align="center"><img src="Map.png" width="100" alt="MapKit Interface"></p> |
 
-<p align="center"><img alt="SwiftUI Interface" src="List.png" width="200"></p> | 
-<p align="center"><img alt="SwiftUI/UIKIT Interface" src="Detailed.png" width="200"></p> |
-<p align="center"><img alt="MapKit Interface" src="Map.png" width="200"></p> |
 
 |:--:|:--:|:--:|
-| **List** | **Detailed** | **Map** |
+| **List** | **Detailed** | **Map** 
 
 UIKit Interface    SwiftUI Interface
 
