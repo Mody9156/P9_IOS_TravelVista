@@ -9,9 +9,12 @@
 Migrate from UIKit to SwiftUI: Convert a UIKit-based interface into SwiftUI.
 Interactive and modern UI: Create a sleek, interactive user experience using SwiftUI components.
 Git and GitHub integration: Collaborate and manage the source code effectively using Git and GitHub.
-Restaurant app functionality: Includes features like:
-Display restaurant menus.
-Table reservations.
+
+Travel app functionality: Includes features such as:
+
+Displaying a list of destinations.
+Details of each destination.
+Location of destinations.
 
 ## Prerequisites
 
@@ -46,8 +49,9 @@ UIKit Interface & SwiftUI Interface
 
 The project starts with a UIKit-based app interface, which you'll gradually migrate to SwiftUI. As you move components, SwiftUI’s declarative syntax will enable you to create a modern and interactive user interface.
 
-Menu Display: Build a SwiftUI view to showcase the restaurant's menu.
-Reservations: Migrate the reservation system, improving it with SwiftUI's interactive capabilities.
+Destination Display: Build a SwiftUI view to showcase the list of travel destinations.
+Destination Details: Migrate the system for displaying destination details, enhancing it with SwiftUI's interactive capabilities.
+Location: Integrate a feature to display the locations of destinations on a map.
 
 ##Contribution
 
