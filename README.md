@@ -4,7 +4,8 @@
  
  <p> This project helps you practice your iOS development skills by migrating an existing interface built with UIKit to SwiftUI. You'll also learn to manage source code with Git and GitHub for collaborative development. </p>
  
-<h2>Features</h2>
+##Features
+
 Migrate from UIKit to SwiftUI: Convert a UIKit-based interface into SwiftUI.
 Interactive and modern UI: Create a sleek, interactive user experience using SwiftUI components.
 Git and GitHub integration: Collaborate and manage the source code effectively using Git and GitHub.
