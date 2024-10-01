@@ -87,10 +87,3 @@ Tip: Make sure you are using the latest Swift and SwiftUI features by keeping Xc
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Acknowledgements
-Apple's SwiftUI Documentation
-GitHub for project collaboration
-
-<h2>Star History</h2>
-
-<a href="https://star-history.com/#your-repository&Date"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=your-repository&type=Date&theme=dark" /> <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=your-repository&type=Date" /> <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=your-repository&type=Date" /> </picture> </a>
