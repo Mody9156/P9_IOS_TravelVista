@@ -34,13 +34,13 @@ Explore the existing UIKit code to understand its structure.
 Start migrating the interface to SwiftUI while retaining the core functionalities.
 Test the app in the iOS simulator or on a physical device to ensure everything works.
 
-<h2>Screenshots</h2>
+## Screenshots
 
-| <p align="center"><picture>
+|
 <p align="center"><img alt="UIKit Interface" src="List.png" width="200"></p> | 
 <p align="center"><img alt="SwiftUI Interface" src="Detailed.png" width="200"></p> |
 <p align="center"><img alt="SwiftUI Interface" src="Map.png" width="200"></p> |
-</p></picture> |
+
 |:--:|:--:|:--:|:--:|
 | **List** | **Detailed** | **Map** |
 
