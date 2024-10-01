@@ -40,7 +40,7 @@ Test the app in the iOS simulator or on a physical device to ensure everything w
 |:--:|:--:|:--:|
 | **List** | **Detailed** | **Map** 
 
-UIKit Interface    SwiftUI Interface
+UIKit Interface && SwiftUI Interface
 
 ## How it Works
 
