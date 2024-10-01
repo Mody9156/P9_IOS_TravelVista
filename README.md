@@ -1,4 +1,4 @@
-<p align="center"> <img width="100" height="100" src="Images/logo.png"> </p> <h1>Migrate a UIKit Interface to SwiftUI</h1> <p> This project helps you practice your iOS development skills by migrating an existing interface built with UIKit to SwiftUI. You'll also learn to manage source code with Git and GitHub for collaborative development. </p>
+<p align="center"> <img width="100" height="100" src="icone.png"> </p> <h1>Migrate a UIKit Interface to SwiftUI</h1> <p> This project helps you practice your iOS development skills by migrating an existing interface built with UIKit to SwiftUI. You'll also learn to manage source code with Git and GitHub for collaborative development. </p>
 Features
 Migrate from UIKit to SwiftUI: Convert a UIKit-based interface into SwiftUI.
 Interactive and modern UI: Create a sleek, interactive user experience using SwiftUI components.
@@ -74,6 +74,3 @@ Apple's SwiftUI Documentation
 GitHub for project collaboration
 Star History
 <a href="https://star-history.com/#your-repository&Date"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=your-repository&type=Date&theme=dark" /> <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=your-repository&type=Date" /> <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=your-repository&type=Date" /> </picture> </a>
-Sponsors
-Thank you to all our sponsors!
-<img src="https://raw.githubusercontent.com/your-repository/github-sponsor-graph/main/graph.png">
