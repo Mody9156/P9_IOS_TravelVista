@@ -45,6 +45,14 @@ Test the app in the iOS simulator or on a physical device to ensure everything w
 
 UIKit Interface & SwiftUI Interface
 
+
+## Demo Video
+
+<div align="center">
+<img src="Screenshots/demoGif.gif" alt="" width="500">
+</div>
+
+
 ## How it Works
 
 The project starts with a UIKit-based app interface, which you'll gradually migrate to SwiftUI. As you move components, SwiftUI’s declarative syntax will enable you to create a modern and interactive user interface.
